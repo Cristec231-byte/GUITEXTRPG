@@ -25,6 +25,15 @@ public class Story {
         this.vm = vm;
     }
     
+    //Method to initialise player
+    public void PlayerCreator() {
+        player.hp = 50;
+        g.hpnL.setText("" + player.hp);
+        
+        player.currentequip = new Weapon_Staff();
+        g.wnL.setText(player.currentequip.name);
+    }
+    
     //Method to handle player choices and outcomes
     public void selectLocation(String nL) {
         switch(nL) {

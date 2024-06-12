@@ -33,6 +33,7 @@ public class RPG_Game {
     public RPG_Game() {
         //Creation of GUI, player, and displaying start screen
         g.createGUI(cH);
+        s.PlayerCreator();
         vm.showStartScreen();
     }
     
